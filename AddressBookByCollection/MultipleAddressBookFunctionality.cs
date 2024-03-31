@@ -78,18 +78,20 @@ namespace AddressBookByCollection
 
         public void searchByCityAndState()
         {
+
+
             Console.WriteLine("enter the city name from which you want to search the person");
-            string city = Console.ReadLine() ;
+            string city = Console.ReadLine();
 
             Console.WriteLine("enter the state name from which you want to search the person ");
 
-            string state  = Console.ReadLine() ;
+            string state = Console.ReadLine();
 
             Console.WriteLine("enter the address book from which you want to search");
-            string addressBookName  = Console.ReadLine() ;
+            string addressBookName = Console.ReadLine();
 
 
-            IEnumerable<string> key = AddressBooks.Keys ;
+            IEnumerable<string> key = AddressBooks.Keys;
             if (key.Contains(addressBookName))
             {
                 foreach (KeyValuePair<string, Contactdetails> pair in AddressBooks[addressBookName])
@@ -111,66 +113,19 @@ namespace AddressBookByCollection
 
 
 
+
+
         }
 
         public void displayNameByCityandState()
         {
-            Console.WriteLine("enter the name of the city to display the person ");
-            string city  = Console.ReadLine() ;
-
-            Console.WriteLine("enter the name of the state to display the person");
-            string state = Console.ReadLine();
-
-            foreach(KeyValuePair<string , Dictionary<string , Contactdetails>> pair in AddressBooks)
-            {  Console.WriteLine(pair.Key);
-                foreach(KeyValuePair<string , Contactdetails> keyValuePair in pair.Value) {
-                        
-                  if (keyValuePair.Value.state.Equals(state) && keyValuePair.Value.city.Equals(city))
-                    {
-                        Console.WriteLine(keyValuePair.Key);
-                    }
-
-                  else if (keyValuePair.Value.state.Equals(state))
-                    {
-                        Console.WriteLine(keyValuePair.Key);
-                    }
-                  else if (keyValuePair.Value.city.Equals(city))
-                    {
-                        Console.WriteLine(keyValuePair.Key);
-                    }
-
-                  else
-                    {
-                        Console.WriteLine("no person is present in the city");
-                    }
-                }
-               
-            }
+            
 
         }
 
         public void countPersonByCityAndState()
         {
-            foreach (KeyValuePair<string, Dictionary<string, Contactdetails>> pair in AddressBooks)
-            {
-                Console.WriteLine($" in address book {pair.Key}");
-
-                Console.WriteLine("enter the city name for which you want the count ");
-                string city = Console.ReadLine();
-
-                Console.WriteLine("enter the city name for which you want the count ");
-                string state = Console.ReadLine();
-
-                int countBystate = pair.Value.Values.Count(e => e.state.Equals(state));
-                int countBycity = pair.Value.Values.Count(e => e.city.Equals(city));
-
-                Console.WriteLine($"the number of pepole in the city is {countBycity}");
-                Console.WriteLine($"the number of the pepole in the state is {countBystate}");
-
-
-
-
-            }
+           
         }
     }
 }
