@@ -119,7 +119,40 @@ namespace AddressBookByCollection
 
         public void displayNameByCityandState()
         {
-            
+
+            Console.WriteLine("enter the name of the city to display the person ");
+            string city = Console.ReadLine();
+
+            Console.WriteLine("enter the name of the state to display the person");
+            string state = Console.ReadLine();
+
+            foreach (KeyValuePair<string, Dictionary<string, Contactdetails>> pair in AddressBooks)
+            {
+                Console.WriteLine(pair.Key);
+                foreach (KeyValuePair<string, Contactdetails> keyValuePair in pair.Value)
+                {
+
+                    if (keyValuePair.Value.state.Equals(state) && keyValuePair.Value.city.Equals(city))
+                    {
+                        Console.WriteLine(keyValuePair.Key);
+                    }
+
+                    else if (keyValuePair.Value.state.Equals(state))
+                    {
+                        Console.WriteLine(keyValuePair.Key);
+                    }
+                    else if (keyValuePair.Value.city.Equals(city))
+                    {
+                        Console.WriteLine(keyValuePair.Key);
+                    }
+
+                    else
+                    {
+                        Console.WriteLine("no person is present in the city");
+                    }
+                }
+
+            }
 
         }
 
