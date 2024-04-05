@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace AddressBookByCollection
@@ -15,10 +16,14 @@ namespace AddressBookByCollection
 
         
         public void addContactToExsistingAddressBook()
+
+
         {
+            
             Console.WriteLine("enter in which address book you Want to enter the contact details ");
             string AddressBookName = Console.ReadLine();
             //AddressBooks["Adress"] = new Dictionary<string, ArrayList> ();
+            
             Console.WriteLine("enter the firstname");
             string firstname = Console.ReadLine();
 
@@ -54,10 +59,22 @@ namespace AddressBookByCollection
 
             else
             {
-                Console.WriteLine("new address book is maintened");
-                Dictionary<string , Contactdetails> value = new Dictionary<string , Contactdetails>();
-                value.Add($"{firstname} {lastname}", new Contactdetails(firstname, lastname, email, phone, address, city, state, zip));
-                AddressBooks.Add(AddressBookName,value);
+                try
+                {
+                    Console.WriteLine("new address book is maintened");
+                    Dictionary<string, Contactdetails> value = new Dictionary<string, Contactdetails>();
+                    value.Add($"{firstname} {lastname}", new Contactdetails(firstname, lastname, email, phone, address, city, state, zip));
+                    AddressBooks.Add(AddressBookName, value);
+
+                } catch(Exception ex) {
+                    if (ex is CustomException cx)
+                    {
+                        Console.WriteLine(cx);
+                    }
+
+                }
+               
+                
             }
            
         }

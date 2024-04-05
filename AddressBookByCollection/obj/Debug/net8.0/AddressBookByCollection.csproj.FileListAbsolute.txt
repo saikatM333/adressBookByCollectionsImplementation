@@ -1,0 +1,15 @@
+C:\Users\Saikat Mondal\source\repos\AddressBookByCollection\AddressBookByCollection\bin\Debug\net8.0\AddressBookByCollection.exe
+C:\Users\Saikat Mondal\source\repos\AddressBookByCollection\AddressBookByCollection\bin\Debug\net8.0\AddressBookByCollection.deps.json
+C:\Users\Saikat Mondal\source\repos\AddressBookByCollection\AddressBookByCollection\bin\Debug\net8.0\AddressBookByCollection.runtimeconfig.json
+C:\Users\Saikat Mondal\source\repos\AddressBookByCollection\AddressBookByCollection\bin\Debug\net8.0\AddressBookByCollection.dll
+C:\Users\Saikat Mondal\source\repos\AddressBookByCollection\AddressBookByCollection\bin\Debug\net8.0\AddressBookByCollection.pdb
+C:\Users\Saikat Mondal\source\repos\AddressBookByCollection\AddressBookByCollection\obj\Debug\net8.0\AddressBookByCollection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Saikat Mondal\source\repos\AddressBookByCollection\AddressBookByCollection\obj\Debug\net8.0\AddressBookByCollection.AssemblyInfoInputs.cache
+C:\Users\Saikat Mondal\source\repos\AddressBookByCollection\AddressBookByCollection\obj\Debug\net8.0\AddressBookByCollection.AssemblyInfo.cs
+C:\Users\Saikat Mondal\source\repos\AddressBookByCollection\AddressBookByCollection\obj\Debug\net8.0\AddressBookByCollection.csproj.CoreCompileInputs.cache
+C:\Users\Saikat Mondal\source\repos\AddressBookByCollection\AddressBookByCollection\obj\Debug\net8.0\AddressBookByCollection.dll
+C:\Users\Saikat Mondal\source\repos\AddressBookByCollection\AddressBookByCollection\obj\Debug\net8.0\refint\AddressBookByCollection.dll
+C:\Users\Saikat Mondal\source\repos\AddressBookByCollection\AddressBookByCollection\obj\Debug\net8.0\AddressBookByCollection.pdb
+C:\Users\Saikat Mondal\source\repos\AddressBookByCollection\AddressBookByCollection\obj\Debug\net8.0\AddressBookByCollection.genruntimeconfig.cache
+C:\Users\Saikat Mondal\source\repos\AddressBookByCollection\AddressBookByCollection\obj\Debug\net8.0\ref\AddressBookByCollection.dll
+C:\Users\Saikat Mondal\source\repos\AddressBookByCollection\AddressBookByCollection\obj\Debug\net8.0\AddressBookByCollection.sourcelink.json
